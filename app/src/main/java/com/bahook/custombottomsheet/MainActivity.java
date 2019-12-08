@@ -60,17 +60,17 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onSlide(@NonNull View view, float slideOffset) {
-                layoutBottomToolbar.setY((slideOffset*layoutBottomToolbar.getHeight())+height-layoutBottomToolbar.getHeight());
+                layoutBottomToolbar.setScaleY(slideOffset+layoutBottomToolbar.getY());
                 Log.d("Main","slideOffset 1: "+slideOffset+"");
-                Log.d("Main","Y 1: " +layoutBottomToolbar.getY()+"");
-               /* if (check){
+                //Log.d("Main","Y 1: " +layoutBottomToolbar.getY()+"");
+                if (check){
 
                 }
                 else {
                     layoutBottomToolbar.setY(1-(slideOffset*100)+height);
                     Log.d("Main","slideOffset 2: "+slideOffset+"");
                     Log.d("Main","Y 2: " +layoutBottomToolbar.getY()+"");
-                }*/
+                }
 
                 /*if (check){
                     layoutBottomToolbar.setY(slideOffset);*//*.
@@ -86,16 +86,7 @@ public class MainActivity extends AppCompatActivity {
                             .setDuration(0).start();*//*
                     //layoutBottomToolbar.setY(-slideOffset);
                 }*/
-               /* if (check){
-                    layoutBottomToolbar.animate().
-                            translationYBy(slideOffset*2)
-                            .setDuration(0).start();
-                }
-                else {
-                    layoutBottomToolbar.animate().
-                            translationYBy(-slideOffset)
-                            .setDuration(0).start();
-                }*/
+
             }
         });
     }

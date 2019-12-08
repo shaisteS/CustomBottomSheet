@@ -27,7 +27,7 @@
         android:orientation="vertical"
         android:visibility="visible"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        app:behavior_peekHeight="120dp">
+        app:behavior_peekHeight="100dp">
 
         <LinearLayout
             android:id="@+id/layout_player_max"
